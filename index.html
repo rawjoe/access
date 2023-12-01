@@ -1,0 +1,19 @@
+<html>
+<title>MOAR MOOSE</title>
+
+<body>
+
+    <p id="main"><img src="moose.png">.</p>
+
+    <script src="md5.min.js"></script>
+    <script>
+        a = new URLSearchParams(window.location.search);
+        b = md5(a.get('a'));
+        if (b == "430934f1a6f3bc506d4bbb0c773e9564") {
+            document.getElementById("main").innerHTML = "Access Granted";
+        }
+    </script>
+
+</body>
+
+</html>
